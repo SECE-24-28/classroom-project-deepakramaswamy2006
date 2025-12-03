@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('hotels1.jpg') no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #ffcc00;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header button {
+            padding: 8px 16px;
+            background: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        header button:hover {
+            background: #e6b800;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            flex: 1;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+
+        .hotels {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .hotel-card {
+            width: 280px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .hotel-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .hotel-card button {
+            margin-top: 10px;
+            padding: 10px 18px;
+            background: #ffcc00;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .hotel-card button:hover {
+            background: #e6b800;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 12px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Royal Stay Hotels</h1>
+    <button onclick="window.location.href='login.html'">Login</button>
+</header>
+
+<div class="hero">
+    <h2>Welcome to Royal Stay Hotels</h2>
+    <p>Experience comfort, luxury & unforgettable hospitality.</p>
+</div>
+<div class="hotels">
+    <div class="hotel-card">
+        <img src="hotels1.jpg" alt="Hotel 1">
+        <h3>Deluxe Suite</h3>
+        <p>Available Rooms: 5</p>
+        <button onclick="window.location.href='login.html'">Book</button>
+    </div>
+
+    <div class="hotel-card">
+        <img src="hotels.jpg" alt="Hotel 2">
+        <h3>Premium Resort</h3>
+        <p>Available Rooms: 3</p>
+        <button onclick="window.location.href='login.html'">Book</button>
+    </div>
+
+    <div class="hotel-card">
+        <img src="hotel.jpg" alt="Hotel 3">
+        <h3>Royal Comfort</h3>
+        <p>Available Rooms: 7</p>
+        <button onclick="window.location.href='login.html'">Book</button>
+    </div>
+</div>
+
+<footer>
+    © 2025 Royal Stay Hotels | All Rights Reserved
+</footer>
+
+</body>
+</html>
